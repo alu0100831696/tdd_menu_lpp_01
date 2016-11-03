@@ -1,3 +1,10 @@
+#Practica06: Desarrollo Dirigido por Pruebas (TDD). 
+## Equipo 01
+## Pruebas: Andrea Pérez Quintana. - alu0100843101@ull.edu.es 
+## Codigo:  Sofía Pizarro Arbelo.  - alu0100831696@ull.edu.es
+
+###################################################################
+
 # Prct06Dietgem
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/prct06_dietgem`. To experiment with that code, run `bin/console` for an interactive prompt.

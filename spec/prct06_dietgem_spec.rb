@@ -31,19 +31,19 @@ describe Prct06Dietgem do
   end
   
   it "Debe existir un título para el menú." do
-    
+    expect(@menu.get_titulo()).not_to be nil
   end
     
   it "Debe existir el porcentaje que el menú representa de la ingesta diaria" do
-    
+    expect(@menu.get_porcentajeIngesta()).not_to be nil
   end
     
   it "Debe existir la descripción de un plato." do
-    
+    expect(@menu.get_descripcion()).not_to be nil
   end
   
   it "Debe existir la porcíon recomendada de un plato." do 
-    
+    expect(@menu.get_porcion()).not_to be nil
   end
   
   it "Debe existir un conjunto de platos." do
@@ -51,19 +51,19 @@ describe Prct06Dietgem do
   end
      
   it "Debe existir un Valor Calórico Total." do
-    
+    expect(@menu.get_vct()).not_to be nil
   end
       
   it "Debe existir el porcentaje de proteínas de un conjunto de platos." do
-    
+    expect(@menu.get_porcentajeProteina()).not_to be nil
   end
      
   it "Debe existir el porcentaje de grasas de un conjunto de platos." do
-    
+    expect(@menu.get_porcentajeGrasas()).not_to be nil
   end
     
   it "Debe existir el porcentaje de hidrados de carbono de un conjunto de platos." do
-    
+    expect(@menu.get_porcentajeHidratos()).not_to be nil
   end
 
   it "Existe un método para obtener la descripción del plato." do

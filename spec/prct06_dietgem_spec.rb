@@ -39,14 +39,6 @@ describe Prct06Dietgem do
     it "Debe existir el porcentaje que el menú representa de la ingesta diaria" do
       expect(@menu.get_porcentajeIngesta()).not_to be nil
     end
-      
-    it "Debe existir la descripción de un plato." do
-      expect(@menu.get_descripcion()).not_to be nil
-    end
-    
-    it "Debe existir la porcíon recomendada de un plato." do 
-      expect(@menu.get_porcion()).not_to be nil
-    end
   
     it "Debe existir un Valor Calórico Total." do
       expect(@menu.get_vct()).not_to be nil
@@ -62,6 +54,10 @@ describe Prct06Dietgem do
       
     it "Debe existir el porcentaje de hidrados de carbono de un conjunto de platos." do
       expect(@menu.get_porcentajeHidratos()).not_to be nil
+    end
+    
+    it "Debe existir un conjunto de platos." do
+    
     end
 
     it "Existe un método para obtener el título del menú." do
@@ -88,40 +84,53 @@ describe Prct06Dietgem do
       expect(@menu.get_porcentajeHidratos()).to eq(47)
     end
     
+    it "Existe un método para obtener el conjunto de platos." do
+    
+    end
+    
+    it "Existe un método para obtener el menú formateado" do
+    
+    end
   end
   
   describe Plato do
   
-  end
-  
-end
-  
-  
-  
-  
-  it "Debe existir un conjunto de platos." do
-    
-  end
-     
-  
-  it "Existe un método para obtener la descripción del plato." do
-    
-  end
-    
+    before :all do
+      
+      @plato1 = Plato.new("Macarrones con salsa de tomate y queso parmesano","1 1/2 cucharón", "200")
+      @plato2 = Plato.new("Galletas de leche con chocolate y yogur"," 4 unidades", "46")
 
+    end
     
-  it "Existe un método para obtener un plato." do
-    expect(@plato1.get_descripcion()).to eq("Macarrones con salsa de tomate y queso parmesano")
-  end
+    it "Debe existir la descripción de un plato." do
+      expect(@plato1.get_descripcion()).not_to be nil
+      expect(@plato2.get_descripcion()).not_to be nil
+    end
     
-  it "Existe un método para obtener el conjunto de platos." do
+    it "Debe existir la porcíon recomendada de un plato." do 
+      expect(@plato1.get_porcion()).not_to be nil
+      expect(@plato2.get_porcion()).not_to be nil
+    end
     
-  end
+    it "Debe existir la ingesta de gramos de un plato" do
+      expect(@plato1.get_ingestaGramos()).not_to be nil
+      expect(@plato2.get_ingestaGramos()).not_to be nil
+    end
     
-
+    it "Existe un método para obtener la descripción del plato." do
+      expect(@plato1.get_descripcion()).to eq("Macarrones con salsa de tomate y queso parmesano")
+      expect(@plato2.get_descripcion()).to eq("Galletas de leche con chocolate y yogur")
+    end
     
-  it "Existe un método para obtener el menú formateado" do
+    it "Existe un método para obtener la porcíon recomendada de un plato." do 
+      expect(@plato1.get_porcion()).to eq("1 1/2 cucharón")
+      expect(@plato2.get_porcion()).to eq(" 4 unidades")
+    end
     
+    it "Existeun metodo para obtener la ingesta de gramos de un plato" do
+      expect(@plato1.get_poringdia()).to eq("200")
+      expect(@plato2.get_poringdia()).to eq("46")
+    end 
   end
 
 end

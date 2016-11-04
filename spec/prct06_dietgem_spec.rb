@@ -1,11 +1,109 @@
 require "spec_helper"
 
 describe Prct06Dietgem do
-  it "has a version number" do
+
+  before :all do
+    
+    @menu = Prct06Dietgem.new("ALMUERZO", 786.9, 19, 34, 47, "30 - 35%")
+    @plato1 = Plato.new("Macarrones con salsa de tomate y queso parmesano","1 1/2 cucharón", "200")
+    @plato2 = Plato.new("Escalope de ternera","1 bistec mediano", "100")
+    @plato3 = Plato.new("Ensalada básica con zanahoria rallada","guarnición", "120")
+    @plato4 = Plato.new("Mandarina","1 grande", "180")
+    @plato5 = Plato.new("Pan de trigo integral","1 rodaja", "20")
+    
+    @menu.push(@plato1)
+    @menu.push(@plato2)
+    @menu.push(@plato3)
+    @menu.push(@plato4)
+    @menu.push(@plato5)
+    
+    @menu2 = Prct06Dietgem.new("MERIENDA", 313.6, 10, 30, 60, "15%")
+    @plato6 = Plato.new("Galletas de leche con chocolate y yogur"," 4 unidades", "46")
+    @plato7 = Plato.new("Flan de vainilla sin huevo", "1 unidad", "110")
+    
+    @menu2.push_plato(@plato6)
+    @menu2.push_plato(@plato7)
+
+  end
+  
+  it "Debe existir un número de versión" do
     expect(Prct06Dietgem::VERSION).not_to be nil
   end
-
-  it "does something useful" do
-    expect(false).to eq(true)
+  
+  it "Debe existir un título para el menú." do
+    
   end
+    
+  it "Debe existir el porcentaje que el menú representa de la ingesta diaria" do
+    
+  end
+    
+  it "Debe existir la descripción de un plato." do
+    
+  end
+  
+  it "Debe existir la porcíon recomendada de un plato." do 
+    
+  end
+  
+  it "Debe existir un conjunto de platos." do
+    
+  end
+     
+  it "Debe existir un Valor Calórico Total." do
+    
+  end
+      
+  it "Debe existir el porcentaje de proteínas de un conjunto de platos." do
+    
+  end
+     
+  it "Debe existir el porcentaje de grasas de un conjunto de platos." do
+    
+  end
+    
+  it "Debe existir el porcentaje de hidrados de carbono de un conjunto de platos." do
+    
+  end
+
+  it "Existe un método para obtener la descripción del plato." do
+      
+  end
+    
+  it "Existe un método para obtener el título del menú." do
+      
+  end
+    
+  it "Existe un método para obtener el porcentaje de la ingesta diaria." do
+      
+  end
+    
+  it "Existe un método para obtener un plato." do
+      
+  end
+    
+  it "Existe un método para obtener el conjunto de platos." do
+    
+  end
+    
+  it "Existe un método para obtener el V.C.T." do
+      
+  end
+    
+  it "Existe un método para obtener el porcentaje de proteínas de un conjunto de platos." do
+      
+  end
+  
+  it "Existe un método para obtener el porcentaje de grasas de un conjunto de platos." do
+      
+  end
+    
+  it "Existe un método para obtener el porcentaje de hidratos de carbono de un conjunto de platos." do
+      
+  end
+    
+  it "Existe un método para obtener el menú formateado" do
+      
+  end
+
 end

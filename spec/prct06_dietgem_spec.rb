@@ -67,19 +67,19 @@ describe Prct06Dietgem do
   end
 
   it "Existe un método para obtener la descripción del plato." do
-      
+    
   end
     
   it "Existe un método para obtener el título del menú." do
-      
+    expect(@menu.get_titulo()).to eq("Almuerzo")
   end
     
   it "Existe un método para obtener el porcentaje de la ingesta diaria." do
-      
+    expect(@menu.get_porcentajeIngesta()).to eq("30 - 35%")
   end
     
   it "Existe un método para obtener un plato." do
-      
+    expect(@plato1.get_descripcion()).to eq("Macarrones con salsa de tomate y queso parmesano")
   end
     
   it "Existe un método para obtener el conjunto de platos." do
@@ -87,23 +87,23 @@ describe Prct06Dietgem do
   end
     
   it "Existe un método para obtener el V.C.T." do
-      
+    expect(@menu.get_vct()).to eq(786.9)
   end
     
   it "Existe un método para obtener el porcentaje de proteínas de un conjunto de platos." do
-      
+    expect(@menu.porcentajeProteinas()).to eq(19)
   end
   
   it "Existe un método para obtener el porcentaje de grasas de un conjunto de platos." do
-      
+    expect(@menu.get_porcentajeGrasas()).to eq(34)
   end
     
   it "Existe un método para obtener el porcentaje de hidratos de carbono de un conjunto de platos." do
-      
+    expect(@menu.get_porcentajeHidratos()).to eq(47)
   end
     
   it "Existe un método para obtener el menú formateado" do
-      
+    
   end
 
 end
